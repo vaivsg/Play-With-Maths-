@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Play With Maths!</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header">Play with Maths!</h1>
+      <button class="btn between">Restart!</button>
+      <button class="btn again">Shuffle!</button>
+      <div class="number">
+        <div class="num integer1">1</div>
+        <div class="num operator">+</div>
+        <div class="num integer2">1</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="left">
+        <input type="number" class="result" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right d-flex">
+        <div>
+          <p class="message">Start calculating...</p>
+          <p class="label-score">💯 Score: <span class="score">5</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+        <div>
+          <button class="btn show-instruction">Instructions</button>
+        </div>
+      </section>
+    </main>
+    <div class="instruction hidden">
+      <button class="close-instruction">&times;</button>
+      <h1 class="inner">Rules & Regulation</h1>
+      <p class="inner-paragraph">
+        Play with Maths! calculation result ranges from -19 to 400. It accepts
+        integer value. During division round off of point one decimat value is
+        allowed. Example: if num=5.69231 then num becomes 5.7; For every
+        calculation you have five chances and marks alloted for every
+        calculation is 5. For every wrong answer -1 will be deducted from score.
+        If you reach maximum attempts i.e. 5 chances. You will lose the match.
+        For every right answer your score will be added to high score. Once your
+        highscore reaches 20 or more. You will win the match. For a new
+        calculation press shuffle button. For a new game press restart.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
